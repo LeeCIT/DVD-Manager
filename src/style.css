@@ -1,0 +1,279 @@
+
+
+
+/*
+    Colour palette
+    
+    rgb(30,10,15);    // Dark wine
+    rgb(70,20,42)     // Wine
+    rgb(180,78,53)    // Brown
+    rgb(250,105,0)    // Orange
+    rgb(243,134,48)   // Light orange
+    rgb(224,228,204)  // Cream blue orange
+    rgb(167,219,219)  // Bluer
+    rgb(105,210,231)  // Blue
+    rgb(130,240,255)  // Bright blue
+*/
+
+
+
+
+
+body {
+    font-family:      "trebuchet ms", "helvetica", sans-serif;
+    color:            rgb(224,228,204);
+    background-color: rgb(30,10,15);
+}
+
+
+
+
+
+article {
+    min-width:        720px;
+    max-width:        1024px;
+    background-color: rgb(70,20,42);
+    margin:           auto;
+    margin-left:      12px;
+    margin-right:     12px;
+    margin-top:       16px;
+    padding-left:     8px;
+    padding-right:    8px;
+    border-radius:    16px;
+    border:           6px solid rgb(130,48,43);
+}
+
+
+
+
+
+header {
+    margin-top:          3px;
+    padding-top:         0;
+    height:              5em;
+    background-image:    url( "/images/dvd.png" );
+    background-position: left -16px;
+    background-repeat:   no-repeat;
+    margin-bottom:       1.6em;
+    border-bottom:       3px solid rgb(180,78,53);
+}
+
+header > h1 {
+    display:      inline-block;
+    font-size:    2.3em;
+    line-height:  0.4em;
+    padding-left: 4.2em;
+    color:        rgb(224,228,204);
+    text-shadow:  0px 0px 32px rgb(0,0,0);
+}
+
+
+
+
+
+table {
+    text-align: center;
+    width:      100%;
+}
+
+th {
+    color:            black;
+    line-height:      1.8em;
+    font-weight:      600;
+    box-shadow:       inset 0px 0px  3px  rgb(180,78,53);
+    text-shadow:      0px 0px 4px rgb(224,228,204);
+    background-color: rgb(243,134,48);
+    border-radius:    6px;
+    border-bottom:    solid 3px rgb(160,58,83);
+}
+
+tr {
+    line-height: 1.5em;
+}
+
+tr.alternator > td {
+    color:            rgb(224,228,204);
+    background-color: rgb(20,9,7);
+}
+
+td {
+    padding-left:     4px;
+    padding-right:    4px;
+    background-color: rgb(80,36,26);
+    border-radius:    6px;
+    border:           solid 2px rgb(180,78,53);
+    border-bottom:    solid 3px rgb(167,219,219);
+    box-shadow:       inset 0px 0px  8px  black;
+}
+
+
+
+
+
+td.action {
+    text-align:       center;
+    background-color: rgb(250,105,0);
+    box-shadow:       inset 0px 0px  32px  black;
+}
+
+td.action:hover {
+    color:            black;
+    background-color: rgb(105,210,231);
+    box-shadow:       inset 0px 0px  32px  white;
+    text-shadow:      0px 0px 3px white;
+}
+
+td.action > a {
+    color:           white;
+    font-weight:     bold;
+    text-decoration: none;
+}
+
+td.action > a:hover {
+    color:           black;
+    text-decoration: underline;
+}
+
+
+form {
+    margin-bottom: 2em;
+}
+
+
+form > fieldset #description {
+    vertical-align: middle;
+}
+
+
+form > fieldset {
+    padding-bottom: 0.8em;
+    line-height:    0.75em;
+    font-weight:    bold;
+    font-size:      2em;
+    text-shadow:    0px 0px  10px  black;
+    border:         3px solid rgb(180,78,53);
+    border-radius:  16px;
+}
+
+
+
+form output {
+    font-weight: normal;
+    font-style:  italic;
+    font-size:  0.5em;
+    color:       red;
+    text-shadow: 0px 0px  5px  black;
+}
+
+form label {
+    display:    inline-block;
+    width:      120px;
+    font-size:  0.5em;
+    text-align: right;
+    padding:    0.25em;
+}
+
+.textInput {
+    width:            240px;
+    padding:          0.25em;
+    font-family:      inherit; /* Uses system font otherwise. */
+    font-weight:      normal;
+    background-color: rgb(36,12,22);
+    color:            rgb(253,249,247);
+    border:           2px solid rgb(250,105,0);
+    border-radius:    8px;
+    box-shadow:       inset  0px 0px  2px 2px  black;
+}
+
+.textInput:hover,
+.textInput:focus {
+    background-color: black;
+    border-color:     rgb(105,210,231);
+}
+
+.textInput:focus {
+    box-shadow:       inset  0px 0px  2px 2px  rgba(0,0,0,0.5);
+    background-color: rgb(55,15,40);
+    border-color:     white;
+}
+
+
+
+.formButton {
+    float:            right;
+    clear:            left;
+    width:            128px;
+    margin-top:      -0.95em; /* Overlap fieldset border. */
+    margin-right:     1em;
+    font-family:      inherit; /* Uses system font otherwise. */
+    font-weight:      bold;
+    font-size:        1.25em;
+    color:            white;
+    background-color: rgb(243,134,48);
+    box-shadow:       inset 0px 0px  8px  rgb(180,78,53);
+    text-shadow:      0px 0px 4px rgb(100,48,33);
+    border-radius:    8px;
+    border:           3px solid black;
+}
+
+.formButton:hover,
+.formButton:focus {
+    color:            black;
+    background-color: rgb(105,210,231);
+    border-color:     rgb(195,250,255);
+    box-shadow:       0px 0px  16px 2px  rgba(105,210,231,0.25);
+    text-shadow:      0px 0px 3px white;
+}
+
+.formButton:active {
+    color:            black;
+    background-color: rgb(239,194,55);
+    border-color:     rgb(90,27,61);
+    box-shadow:       0px 0px  16px 2px  rgba(193,29,68,0.75);
+}
+
+
+
+p.bottomAction {
+    margin-top:    1.5em;
+    margin-bottom: 2em;
+    padding-top:   2em;
+    border-top:    3px solid rgb(180,78,53);
+}
+
+
+.bottomAction > a {
+    margin-right:     8px;
+    padding:          16px;
+    font-weight:      bold;
+    font-size:        1.25em;
+    color:            white;
+    background-color: rgb(243,134,48);
+    box-shadow:       inset 0px 0px  8px  rgb(180,78,53);
+    text-shadow:      0px 0px 4px rgb(100,48,33);
+    border-radius:    12px;
+    border:           3px solid black;
+}
+
+
+
+.bottomAction > a:hover {
+    color:            black;
+    background-color: rgb(105,210,231);
+    border-color:     rgb(195,250,255);
+    box-shadow:       0px 0px  16px 2px  rgba(105,210,231,0.25);
+    text-shadow:      0px 0px 3px white;
+}
+
+
+
+.bottomAction > a:active {
+    color:            black;
+    background-color: rgb(239,194,55);
+    border-color:     rgb(90,27,61);
+    box-shadow:       0px 0px  16px 2px  rgba(193,29,68,0.75);
+}
+
+
+
+
