@@ -29,8 +29,6 @@
     
     
     // Select database and check that it succeeded.
-    $dbName = "DVDs";
-    
     if ( ! mysqli_select_db( $dbConnection, $dbName )) {
         echo "Unable to select $dbName database.";
         exit();
